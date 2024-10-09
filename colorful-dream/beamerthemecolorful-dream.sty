@@ -261,6 +261,13 @@
 \end{tikzpicture}}
 }
 
+\newcommand\EmptyTitleImage[0]{
+% prevent error
+\titleimage{\begin{tikzpicture}
+    \node (n0) {};
+\end{tikzpicture}}
+}
+
 \DeclareFixedFont{\btcd@font@eulerNormal}{U}{eur}{b}{n}{\f@size}
 \DeclareFixedFont{\btcd@font@eulerSmall}{U}{eur}{b}{n}{9}
 \def\@@university@name{ulm university}
